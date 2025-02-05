@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -319,3 +323,94 @@ body {
 }
 
 /* ---- PORTFOLIO END ---- */
+
+/* ---- FORM SECTION ---- */
+
+.form {
+  padding: 1.25rem;
+  padding-top: 0;
+}
+
+.form__title{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  margin: 0 auto;
+}
+
+.form__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group {
+  flex: 1;
+  margin-bottom: 0.9375rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 0.3125rem;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.3125rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--color-ppal);
+}
+
+textarea {
+  resize: none;
+}
+
+.form__button {
+  padding: 0.625rem 0.9375rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--color-ppal);
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.25rem;
+}
+
+.form__button:hover {
+  background-color: var(--color-alternativo);
+}
+
+/* ---- FORM QUERIES ---- */
+
+@media screen and (min-width: 1024px) {
+  .label {
+    font-size: 1rem;
+  }
+  .form-wrapper {
+    max-width: 80dvh;
+  }
+
+  .row {
+    display: flex;
+    gap: 1.25rem;
+  }
+}
+
+/* ---- FORM END ---- */
