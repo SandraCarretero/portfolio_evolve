@@ -414,3 +414,18 @@ textarea {
 }
 
 /* ---- FORM END ---- */
+
+
+/* ---- FOOTER SECTION ---- */
+
+.footer{
+    background-color: var(--color-alternativo);
+    height: 100%;
+    min-height: 3dvh;
+}
+
+/* ---- FOOTER QUERIES ---- */
+
+
+
+/* ---- FOOTER END ---- */
