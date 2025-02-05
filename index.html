@@ -10,20 +10,67 @@
 </head>
 <body>
     <header class="header">
-        <input type="checkbox" name="" id="open-menu" class="header__checkbox">
-        <label for="open-menu" class="header__open-nav-button" role="button">
-            <img src="img/menu-burger.svg" alt="hamburger" class="header__hamburger">
-        </label>
-        <div class="header__logo-container">
-            <img src="img/logo.svg" alt="Sandra Carretero" class="header__logo">
+        <div class="header-wrapper">
+            <input type="checkbox" name="" id="open-menu" class="header__checkbox">
+            <label for="open-menu" class="header__open-nav-button" role="button">
+                <img src="img/menu-burger.svg" alt="hamburger" class="header__hamburger">
+            </label>
+            <div class="header__logo-container">
+                <img src="img/logo.svg" alt="Sandra Carretero" class="header__logo">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="">PROFILE</a></li>
+                    <li class="header__nav-item"><a href="">PORTFOLIO</a></li>
+                    <li class="header__nav-item"><a href="">CONTACTO</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="">PROFILE</a></li>
-                <li class="header__nav-item"><a href="">PORTFOLIO</a></li>
-                <li class="header__nav-item"><a href="">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>    
+    </header>  
+    <main class="profile">
+        <div class="profile-wrapper">
+            <div class="profile__img-container">
+                <img src="https://picsum.photos/1200/900" alt="" class="profile__img">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1 class="profile__title">Sandra Carretero</h1>
+                        <p class="profile__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam, facere cumque veritatis molestias doloremque incidunt beatae perferendis pariatur perspiciatis quisquam tenetur quis obcaecati unde nulla quae assumenda qui maiores?</p>
+                    </div>
+                    <div class="profile__skills-container">
+                        <h2 class="profile__skills__title">Skills</h2>
+                        <ul>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar load-bar__bar--100">100%</div>
+                                </div>
+                                <span class="profile__skill-name">HTML</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar load-bar__bar--80">80%</div>
+                                </div>
+                                <span class="profile__skill-name">CSS</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar load-bar__bar--70">70%</div>
+                                </div>
+                                <span class="profile__skill-name">JS</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar load-bar__bar--60">60%</div>
+                                </div>
+                                <span class="profile__skill-name">SQL</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+    
 </body>
 </html>
