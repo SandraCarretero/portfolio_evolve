@@ -10,35 +10,31 @@
   <body>
     <header class="header">
       <div class="header-wrapper">
-        <input type="checkbox" name="" id="open-menu" class="header__checkbox"
+        <input
+          type="checkbox"
+          name=""
+          id="open-menu"
+          class="header__checkbox"
         />
         <label for="open-menu" class="header__open-nav-button" role="button">
-          <img
-            src="img/menu-burger.svg"
-            alt="hamburger"
-            class="header__hamburger"
-          />
+          <img src="img/menu-burger.svg" alt="hamburger" class="header__hamburger"/>
         </label>
         <div class="header__logo-container">
           <img src="img/logo.svg" alt="Sandra Carretero" class="header__logo" />
         </div>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="">PROFILE</a></li>
-            <li class="header__nav-item"><a href="">PORTFOLIO</a></li>
-            <li class="header__nav-item"><a href="">CONTACTO</a></li>
+            <li class="header__nav-item"><a href="#profile">PROFILE</a></li>
+            <li class="header__nav-item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="header__nav-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="profile">
+    <main id="profile" class="profile">
       <div class="profile-wrapper">
         <div class="profile__img-container">
-          <img
-            src="https://picsum.photos/1200/900"
-            alt=""
-            class="profile__img"
-          />
+          <img src="https://picsum.photos/1200/900" alt="" class="profile__img" />
         </div>
         <div class="profile__data-container">
           <div class="profile__data">
@@ -84,29 +80,56 @@
         </div>
       </div>
     </main>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h2 class="portfolio__title">PORTFOLIO</h2>
       <div class="portfolio__project-container">
-          <div class="portfolio__project">
-              <h2 class="portfolio__project-name">PROJECT</h2>
-          </div>
-          <div class="portfolio__project">
-              <h2 class="portfolio__project-name">PROJECT</h2>
-          </div>
-          <div class="portfolio__project">
-              <h2 class="portfolio__project-name">PROJECT</h2>
-          </div>
-          <div class="portfolio__project">
-              <h2 class="portfolio__project-name">PROJECT</h2>
-          </div>
-          <div class="portfolio__project">
-              <h2 class="portfolio__project-name">PROJECT</h2>
-          </div>
-          <div class="portfolio__project">
-              <h2 class="portfolio__project-name">PROJECT</h2>
-          </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT</h2>
+        </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT</h2>
+        </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT</h2>
+        </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT</h2>
+        </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT</h2>
+        </div>
+        <div class="portfolio__project">
+          <h2 class="portfolio__project-name">PROJECT</h2>
+        </div>
       </div>
     </section>
-    
+    <section id="contact" class="form">
+      <h3 class="form__title">Contacto</h3>
+      <div class="form-wrapper">
+        <form action="#" method="" class="form__contact">
+          <div class="row">
+            <div class="form__group">
+              <label class="label" for="first-name">First name</label>
+              <input class="input" type="text" id="first-name" name="first-name" placeholder="First name"/>
+            </div>
+            <div class="form__group">
+              <label class="label" for="last-name">Last name</label>
+              <input class="input" type="text" id="last-name" name="last-name" placeholder="Last name"/>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="label" for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <label class="label" for="message">Message</label>
+            <textarea class="input" id="message" name="message" rows="4" placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="form__button">ENVIAR</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer"></footer>
   </body>
 </html>
